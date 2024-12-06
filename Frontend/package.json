@@ -24,7 +24,6 @@
   },
   "contributors": [],
   "scripts": {
-    "build" : "react-scripts build",
     "dev": "npx parcel --port 8000 index.html",
     "test": ""
   },
