@@ -1,4 +1,5 @@
-let { API_URL } = process.env;
+API_URL = 'https://instabyte-pi.vercel.app'
+let { API_URL } = process.env.NEXT_PUBLIC_API_URL;
 
 // Função para buscar os dados do endpoint
 export default async function fetchImages() {
