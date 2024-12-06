@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "Frontend/package.json",
+        "use": "@vercel/react"
+      },
+      {
+        "src": "BackEnd/api/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "BackEnd/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "Frontend/$1"
+      }
+    ]
+  }
