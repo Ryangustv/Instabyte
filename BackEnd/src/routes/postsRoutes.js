@@ -4,7 +4,7 @@ import { listarposts,  novoPost, uploadImg, atualizarNovoPost} from "../controll
 import cors from "cors";
 
 const corsOptions = {
-  origin: "http://localhost:8000",
+  origin: "*",
   optionsSuccessStatus: 200 
 }
 const storage = multer.diskStorage({
